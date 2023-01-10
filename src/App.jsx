@@ -13,10 +13,9 @@ import { AddressZero } from '@ethersproject/constants';
 const App = () => {
   // Use the hooks thirdweb give us.
   const address = useAddress();
-  console.log("👋 Address:", address);
-
   const network = useNetwork();
 
+  console.log("👋 Address:", address);
   // Initialize our Edition Drop contract
   const editionDropAddress = "0x0daebD53Fa7e3FEF948a2134339056acb1fE6ce6";
 
