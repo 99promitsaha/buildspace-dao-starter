@@ -136,17 +136,6 @@ useEffect(() => {
 
 // Now, we combine the memberAddresses and memberTokenAmounts into a single array
 const memberList = useMemo(() => {
-  if (address && (network?.[0].data.chain.id !== ChainId.Goerli)) {
-    return (
-      <div className="unsupported-network">
-        <h2>Please connect to Goerli</h2>
-        <p>
-          This dapp only works on the Goerli network, please switch networks
-          in your connected wallet.
-        </p>
-      </div>
-    );
-  }
   return memberAddresses.map((address) => {
     // We're checking if we are finding the address in the memberTokenAmounts array.
     // If we are, we'll return the amount of token the user has.
@@ -160,6 +149,17 @@ const memberList = useMemo(() => {
   });
 }, [memberAddresses, memberTokenAmounts]);
 
+  if (address && (network?.[0].data.chain.id !== ChainId.Goerli)) {
+    return (
+      <div className="unsupported-network">
+        <h2>Please connect to Goerli</h2>
+        <p>
+          This dapp only works on the Goerli network, please switch networks
+          in your connected wallet.
+        </p>
+      </div>
+    );
+  }
   // ... include all your other code that was already there below.
   // This is the case where the user hasn't connected their wallet
   // to your web app. Let them call connectWallet.
