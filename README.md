@@ -1,11 +1,29 @@
-# buildspace x thirdweb - Build your own DAO with just Javascript
+# Build your own DAO with just Javascript & thirdweb
 
-### **Welcome 👋**
+Feel free to fork the project and make your own changes. Detailed documentation can be found [here](https://buildspace.so/).
+
+## 👋 Welcome
 To get started with this project, clone this repo and follow these commands:
 
-1. Run `npm install` at the root of your directory
-2. Run `npm start` to start the project
-3. Start coding!
+```bash
+npm install
+```
+at the root of your directory.
 
-### **Questions?**
-Have some questions make sure you head over to your [buildspace Dashboard](https://app.buildspace.so/projects/COb520aae3-7925-42f4-a5e7-eaf718933766) and link your Discord account so you can get access to helpful channels and your instructor!
+```bash
+npm start
+```
+to start the project
+
+Start coding! 👨‍💻
+
+## Usage
+
+Try the live project deployed on [Vercel here](https://creator-dao-six.vercel.app/).
+
+1. Install Metamask Wallet on your browser first to try the app out.
+2. Get some Goerli test eth from a faucet. Google for it.
+3. Claim your free NFT from the app on Goerli Testnet.
+4. Be a part of the DAO.
+
+That's all. Short and simple documentation.
